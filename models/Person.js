@@ -22,6 +22,8 @@ module.exports = class Person {
 			Daughter: relationGetters.daughter,
 			Siblings: relationGetters.siblings,
 			Spouse: relationGetters.spouse,
+			Grandfather:relationGetters.grandfather,
+			Grandmother:relationGetters.grandmother
 		};
 
 		this.setters = {

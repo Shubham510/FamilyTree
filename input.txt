@@ -1,0 +1,4 @@
+GET_RELATIONSHIP Laki Grandfather 
+GET_RELATIONSHIP Laki Grandmother
+GET_RELATIONSHIP Vasa Grandfather
+GET_RELATIONSHIP Vasa Grandmother

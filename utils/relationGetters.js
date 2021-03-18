@@ -161,4 +161,24 @@ module.exports = {
 		}
 		return outputArr;
 	},
+	grandfather: (person) => {
+		let outputArr =[];
+		let childInFamily = person.childIn;
+		if (childInFamily) {
+			let rootParent = childInFamily.root;
+			let grandfather = rootParent.childIn.father;
+			outputArr.push(grandfather);
+		}
+		return outputArr;
+	},
+	grandmother: (person) => {
+		let outputArr=[];
+		let childInFamily = person.childIn;
+		if (childInFamily) {
+			let rootParent = childInFamily.root;
+			let grandmother = rootParent.childIn.mother;
+			outputArr.push(grandmother);
+		}
+		return outputArr;
+	}
 };
