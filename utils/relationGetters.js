@@ -166,8 +166,10 @@ module.exports = {
 		let childInFamily = person.childIn;
 		if (childInFamily) {
 			let rootParent = childInFamily.root;
-			let grandfather = rootParent.childIn.father;
-			outputArr.push(grandfather);
+			if(rootParent){
+				let grandfather = rootParent.childIn.father;
+				outputArr.push(grandfather);
+			}
 		}
 		return outputArr;
 	},
@@ -176,8 +178,10 @@ module.exports = {
 		let childInFamily = person.childIn;
 		if (childInFamily) {
 			let rootParent = childInFamily.root;
-			let grandmother = rootParent.childIn.mother;
-			outputArr.push(grandmother);
+			if(rootParent){
+				let grandmother = rootParent.childIn.mother;
+				outputArr.push(grandmother);
+			}
 		}
 		return outputArr;
 	}
